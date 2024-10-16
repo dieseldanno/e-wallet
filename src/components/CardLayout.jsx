@@ -11,7 +11,7 @@ const CardLayout = ({
   return (
     <>
       <div
-        className="relative border p-2 pl-6 pr-6 rounded shadow-sm text-black mb-4"
+        className="relative border p-2 pl-6 pr-6 rounded shadow-sm mb-4"
         style={{
           backgroundColor: vendor.colorTheme.background,
           color: vendor.colorTheme.textColor,
@@ -27,7 +27,7 @@ const CardLayout = ({
         <img
           src={ChipIcon}
           alt="chip"
-          className="absolute top-8 left-6 w-10 h-10"
+          className="absolute top-12 left-8 w-10 h-10"
         />
         <div className="mt-20 mr-2 ml-2">
           <p className="text-2xl font-mono font-semibold">
@@ -45,7 +45,7 @@ const CardLayout = ({
       <div>
         {onDelete && (
           <button
-            className="mb-4 bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600"
+            className="inline-block mb-4 p-2 border rounded w-48 bg-red-500 text-white hover:bg-red-600 hover:text-white"
             onClick={onDelete}
           >
             Delete card

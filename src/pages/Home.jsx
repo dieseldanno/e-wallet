@@ -22,7 +22,8 @@ const Home = ({ cards, deleteCard }) => {
                 onDelete={null} // no delete function
               />
             )}
-            <p>Inactive cards</p>
+            {/* conditional render for showing p-tag only if there's no inactive cards */}
+            {inactiveCards.length > 0 && <p>Inactive cards</p>}
             {/* render inactive cards with delete btn */}
             {inactiveCards.map((card) => (
               <Card
@@ -39,7 +40,7 @@ const Home = ({ cards, deleteCard }) => {
         {cards.length < 4 ? (
           <Link
             to="/addcard"
-            className="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 hover:text-white"
+            className="inline-block mb-4 p-2 border w-48 bg-blue-500 text-white rounded hover:bg-blue-600 hover:text-white"
           >
             Add new card
           </Link>

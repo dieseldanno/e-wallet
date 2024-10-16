@@ -48,7 +48,7 @@ export function validateCard({
 
   if (/\D/.test(ccv)) {
     return "CCV can't contain letters";
-  } else if (ccv < 3) {
+  } else if (ccv.length !== 3) {
     return "CCV must contain 3 numbers";
   }
 

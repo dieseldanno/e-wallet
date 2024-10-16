@@ -1,6 +1,7 @@
 import HolyCashLogo from "../assets/holycash.png";
 import DinoBankLogo from "../assets/dinobank.png";
 import NPMLogo from "../assets/npm.png";
+import BOFLogo from "../assets/bankoflucy.png";
 
 const vendors = {
   holyCash: {
@@ -8,7 +9,7 @@ const vendors = {
     logo: HolyCashLogo,
     colorTheme: {
       background: "#FFD700",
-      textColor: "#000",
+      textColor: "#4A4A49",
     },
   },
   dinoBank: {
@@ -16,7 +17,7 @@ const vendors = {
     logo: DinoBankLogo,
     colorTheme: {
       background: "#0B6623",
-      textColor: "FFF",
+      textColor: "#C0C0C0",
     },
   },
   nationalPennyMoney: {
@@ -24,7 +25,15 @@ const vendors = {
     logo: NPMLogo,
     colorTheme: {
       background: "#063B87",
-      textColor: "FFF",
+      textColor: "#C0C0C0",
+    },
+  },
+  bankOfLucy: {
+    name: "Bank Of Lucy",
+    logo: BOFLogo,
+    colorTheme: {
+      background: "#98272A",
+      textColor: "#00000",
     },
   },
 };

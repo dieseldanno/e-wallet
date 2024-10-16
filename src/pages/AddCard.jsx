@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { validateCard } from "../utils/validation";
 import CardPrev from "../components/CardPrev";
 
@@ -67,7 +67,7 @@ const AddCard = ({ addCard }) => {
           onChange={handleCardNumber}
           className="block mb-4 p-2 border rounded w-56 mx-auto"
         />
-        <div className="flex space-x-2 mb-4 mx-auto">
+        <div className="flex space-x-2 mb-4 w-56 mx-auto">
           <input
             type="text"
             placeholder="MM"
@@ -102,14 +102,21 @@ const AddCard = ({ addCard }) => {
           <option value="holyCash">HOLY CASH</option>
           <option value="dinoBank">DINO BANK</option>
           <option value="nationalPennyMoney">NATIONAL PENNY MONEY</option>
+          <option value="bankOfLucy">BANK OF LUCY</option>
         </select>
         <button
           type="submit"
-          className="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 hover:text-white"
+          className="mt-4 inline-block mb-4 p-2 border rounded w-56 bg-blue-500 text-white hover:bg-blue-600 hover:text-white"
         >
           Add card
         </button>
       </form>
+      <Link
+        to="/"
+        className="inline-block mb-4 p-2 border rounded w-56 bg-red-500 text-white hover:bg-red-600 hover:text-white"
+      >
+        Cancel
+      </Link>
     </div>
   );
 };
